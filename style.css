@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contact-bg{
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(contact_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.contact-bg h2 a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    opacity: 0.9;
+
+}
+
+.contact-bg p{
+    color: #fff;
+    font-size: 14px;
+    margin: 0 30px;
+    opacity: 0.8;
+}
+
+.contact-body{
+    width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.contact-info div{
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ffffff, rgb(223, 246, 244));
+}
+.contact-info div span{
+    display: block;
+    margin-top: 5px;
+}
+
+.contact-info div span i{
+   font-size: 30px;
+   padding-bottom: 15px;
+   color: rgb(6, 39, 53); 
+  
+}
+.contact-info div span:nth-child(2){
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contact-form{
+    width: 1200px;
+    padding: 20px;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    background: rgb(238, 246, 246);
+    box-shadow: 0 2px 5px rgba (0,0,0,0.3);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.contact-form h2{
+    font-size: 22px;
+    opacity: 0.8;
+    margin: 20px 0;
+}
+
+form{
+    padding-bottom: 20px;
+}
+
+.form-input{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 12px 0;
+    outline: 0;
+    font-size: 17px;
+}
+form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 14px;
+}
+
+.send-btn{
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #1493ee;
+    padding: 12px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+}
+
+.map{
+    width: 80%;
+    margin-left: 60px;
+}
+
+.map iframe{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-footer{
+    background: #021a2c;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+h3{
+    font-size: 24px;
+    margin: 20px auto;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links a i{
+    padding: 9px;
+    font-size: 20px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+   
+
+/* ........For Mobile Screen....... */
+
+@media only screen and (max-width:728px){
+ .contact-body{
+    width: 100%;
+ }
+ .contact-info{
+    display: block;
+ }
+ .contact-info div{
+    margin-bottom: 10px;
+ }
+ .contact-form{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+  
+ }
+ .map{
+    width: 100%;
+    margin: 0 auto;
+ }
+
+}
+
+/* ........For Tablet Screen....... */
+
+@media only screen and (max-width:992px) and (min-width:728px){
+    .contact-body{
+       width: 100%;
+    }
+    .contact-info{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-info div{
+       margin-bottom: 10px;
+    }
+    .contact-form{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .map{
+       width: 100%;
+       margin: 0 auto;
+    }
+
+}
